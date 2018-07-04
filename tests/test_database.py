@@ -3,7 +3,7 @@
 # To run the tests, use: python3 -m pytest --capture=sys
 
 from dragoonterminal.database import Database
-from tests.test_utils import region_dict, get_region, make_extra_counts, MAX_ID
+# from tests.test_utils import region_dict, get_region, make_extra_counts, MAX_ID
 
 
 # def test_first_database():
