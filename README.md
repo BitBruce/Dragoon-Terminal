@@ -67,7 +67,7 @@ You can install it with pip for a single user with `pip3.6 install --user git+ht
 
 ## npm (Per-User)
 
-You can install in any (npm-supported) OS using `npm install --global dragoon-terminal`. That's it, you're done!
+**(COMING SOON)** You can install in any (npm-supported) OS using `npm install --global dragoon-terminal`. That's it, you're done!
 
 ## Distutils (System-wide)
 
