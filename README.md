@@ -9,6 +9,8 @@ or see below for the full list of commands.
 At the moment, all of the images are just concept art and assets ripped from the game. In the future the images will be 
 clean personalized images inspired by the original Pokemon-Terminal, and all else thrown into Extras.
 
+**Looking for an artist!**
+
 All credit due to LazoCoder and his contributors for original code and idea, 
 and The Legend of Dragoon, Sony Entertainment for the game assets and concept art.
 
@@ -16,6 +18,7 @@ and The Legend of Dragoon, Sony Entertainment for the game assets and concept ar
 - Create new, consistent backgrounds/wallpapers. Current ones are rough/outright terrible.
 - Change "region" to "category" in all places.
 - Update brightness values.
+- Travis
 - Finish updating this README
 - Help Pokemon-Terminal project with bug fixes and new features? In favor of replacing flat file, don't know Python though
 
@@ -61,11 +64,11 @@ Notes:
 
 ## pip (System-wide)
 
-Run `sudo pip3.6 install git+https://github.com/BitBruce/Pokemon-Terminal.git`. When the command completes, it's installed and ready to go!
+Run `sudo pip3.6 install git+https://github.com/BitBruce/Dragoon-Terminal.git`. When the command completes, it's installed and ready to go!
 
 ## pip (Per-User)
 
-You can install it with pip for a single user with `pip3.6 install --user git+https://github.com/BitBruce/Pokemon-Terminal.git`. You might want to add `~/.local/bin` to your PATH to be able to call `dragoon` everywhere.
+You can install it with pip for a single user with `pip3.6 install --user git+https://github.com/BitBruce/Dragoon-Terminal.git`. You might want to add `~/.local/bin` to your PATH to be able to call `dragoon` everywhere.
 
 ## npm (Per-User)
 
@@ -73,7 +76,7 @@ You can install it with pip for a single user with `pip3.6 install --user git+ht
 
 ## Distutils (System-wide)
 
-You can clone or [download](https://github.com/BitBruce/Pokemon-Terminal/archive/master.zip) this repo, and run `sudo python3.6 setup.py install` at the root of the repo.
+You can clone or [download](https://github.com/BitBruce/Dragoon-Terminal/archive/master.zip) this repo, and run `sudo python3.6 setup.py install` at the root of the repo.
 
 # Usage
 
@@ -138,7 +141,7 @@ Example:
 
 ## iTerm2 settings
 
-I (LazoCoder) highly suggest making the font colors black and the terminal window transparent. Some of the images have both light and dark colours and so it can be difficult to see the text sometimes. Transparency resolves this issue. Since *Pokemon-Terminal* only changes the background, the transparency must be done manually:
+I (LazoCoder) highly suggest making the font colors black and the terminal window transparent. Some of the images have both light and dark colours and so it can be difficult to see the text sometimes. Transparency resolves this issue. Since *Dragoon-Terminal* only changes the background, the transparency must be done manually:
 
 1. Navigate to iTerm2 > Preferences > Profiles > Window
 2. Set the transparency to about half way.
@@ -204,6 +207,7 @@ That will simply pick a completely random image each session, but the `dragoon` 
 
 # Notes & Credits (for Dragoon-Terminal)
 - Sony Entertainment/The Legend of Dragoon team for the game, and its assets and concept art.
+- LazoCoder and contributors of Pokemon-Terminal.
 - DrewUniverse and the Legend of Dragoon community (find on [reddit]() and [discord]()).
 - Every fan that cherishes this game and contributes to its memory.
 
