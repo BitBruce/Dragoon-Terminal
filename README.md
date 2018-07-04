@@ -8,47 +8,29 @@ Type `dragoon lavitz` to set an image of Lavitz as the background, or see below 
 At the moment, all of the images are just concept art and assets ripped from the game. In the future the images will be 
 clean personalized images inspired by the original Pokemon-Terminal, and all else thrown into Extras.
 
-All credit due to The Legend of Dragoon, Sony Entertainment
+All credit due to LazoCoder and his contributors for original code and idea, 
+and The Legend of Dragoon, Sony Entertainment for the game assets and concept art.
 
-Pokemon-Terminal notes below:
----
+*To do:*
+- Create new, consistent backgrounds/wallpapers. Current ones are rough/outright terrible.
+- Change "region" to "category" in all places.
+- Update brightness values.
+- Finish updating this README
 
-<!-- [![Build Status](https://travis-ci.org/LazoCoder/Pokemon-Terminal.svg?branch=master)](https://travis-ci.org/LazoCoder/Pokemon-Terminal) -->
+# README
+
+[![Build Status](https://travis-ci.org/LazoCoder/Pokemon-Terminal.svg?branch=master)](https://travis-ci.org/LazoCoder/Pokemon-Terminal)
 
 <p align="center">
+    Example from Pokemon-Terminal:
     <img src="https://i.imgur.com/n34fXyp.png" width="700"/> <!--Pikachu-->
-    <img src="https://i.imgur.com/bLajJfw.png" width="430"/> <!--Bulbasaur-->
-    <img src="https://i.imgur.com/ZzQhJuE.png" width="430"/> <!--Squirtle-->
-    <img src="https://i.imgur.com/54fvKOQ.png" width="430"/> <!--Charizard-->
-    <img src="https://i.imgur.com/xaHPMUd.png" width="430"/> <!--Eevee-->
-    <img src="https://i.imgur.com/W41EHr2.png" width="430"/> <!--Clefairy-->
-    <img src="https://i.imgur.com/QjqQ6QQ.png" width="430"/> <!--Magikarp-->
-    <img src="https://i.imgur.com/K7G2VW4.png" width="430"/> <!--Machop-->
-    <img src="https://i.imgur.com/3z1WtCu.png" width="430"/> <!--Slowpoke-->
-    <img src="https://i.imgur.com/u8cYbFp.png" width="430"/> <!--Muk-->
-    <img src="https://i.imgur.com/54Ehhnk.png" width="430"/> <!--Porygon-->
-    <img src="https://i.imgur.com/XEOwCXr.png" width="430"/> <!--Chansey-->
-    <img src="https://i.imgur.com/smvCxHG.png" width="430"/> <!--Growlithe-->
-    <img src="https://i.imgur.com/ZR5h5dZ.png" width="430"/> <!--Scyther-->
-    <img src="https://i.imgur.com/I4TakUm.png" width="430"/> <!--Omanyte-->
-    <img src="https://i.imgur.com/165hq6O.png" width="430"/> <!--Corsola-->
-    <img src="https://i.imgur.com/H0AhgW5.png" width="430"/> <!--Mewtew-->
-    <img src="https://i.imgur.com/jF2DMqO.png" width="430"/> <!--Azumarill-->
-    <img src="https://i.imgur.com/G0LpD66.png" width="430"/> <!--Snubbull-->
-    <img src="https://i.imgur.com/zirtgZq.png" width="430"/> <!--Wobbuffet-->
-    <img src="https://i.imgur.com/O49I1gE.png" width="430"/> <!--Tyranitar-->
-    <img src="https://i.imgur.com/SCe91Uv.png" width="430"/> <!--Lugia-->
-    <img src="https://i.imgur.com/5vllDok.png" width="430"/> <!--Kyogre-->
-    <img src="https://i.imgur.com/3YSj8MB.png" width="430"/> <!--Rayquaza-->
-    <img src="https://i.imgur.com/YW5pSkZ.png" width="430"/> <!--Deoxys-->
     <!--<br><a href="https://imgur.com/a/0wfFm" target="_blank">More previews</a>-->
 </p>
 
 # Features
-- 719 unique Pokemon
-- Select Pokemon by name or by index number
+- Images including logos, dragoon spirits, characters and locations
+- Select image by name, category, tag or index number/file name
 - Ability to change the Desktop Wallpaper & the Terminal background
-- Internal search system for finding Pokemon
 - Supports iTerm2, Terminology & Tilix terminal emulators
 - Supports MacOS, GNOME, and i3wm (with feh) for desktops
 
@@ -66,7 +48,6 @@ Get a compatible terminal emulator:
 - [Tilix](https://gnunn1.github.io/tilix-web/)
 
 You can then proceed with one of the following methods for installation:
-- [Arch Linux User Repository package (System-wide)](https://aur.archlinux.org/packages/pokemon-terminal-git/) (maintained by [@sylveon](https://github.com/sylveon))
 - [pip (System-wide)](#pip-system-wide)
 - [pip (Per-User)](#pip-per-user)
 - [npm (Per-User)](#npm-per-user)
@@ -78,73 +59,73 @@ Notes:
 
 ## pip (System-wide)
 
-Run `sudo pip3.6 install git+https://github.com/LazoCoder/Pokemon-Terminal.git`. When the command completes, it's installed and ready to go!
+Run `sudo pip3.6 install git+https://github.com/BitBruce/Pokemon-Terminal.git`. When the command completes, it's installed and ready to go!
 
 ## pip (Per-User)
 
-You can install it with pip for a single user with `pip3.6 install --user git+https://github.com/LazoCoder/Pokemon-Terminal.git`. You might want to add `~/.local/bin` to your PATH to be able to call `pokemon` and `ichooseyou` everywhere.
+You can install it with pip for a single user with `pip3.6 install --user git+https://github.com/BitBruce/Pokemon-Terminal.git`. You might want to add `~/.local/bin` to your PATH to be able to call `dragoon` everywhere.
 
 ## npm (Per-User)
 
-You can install in any (npm-supported) OS using `npm install --global pokemon-terminal`. That's it, you're done!
+You can install in any (npm-supported) OS using `npm install --global dragoon-terminal`. That's it, you're done!
 
 ## Distutils (System-wide)
 
-You can clone or [download](https://github.com/LazoCoder/Pokemon-Terminal/archive/master.zip) this repo, and run `sudo python3.6 setup.py install` at the root of the repo.
+You can clone or [download](https://github.com/BitBruce/Pokemon-Terminal/archive/master.zip) this repo, and run `sudo python3.6 setup.py install` at the root of the repo.
 
 # Usage
 
 ```
-usage: pokemon [-h] [-n NAME]
-               [-r [{logo,johto,hoenn,sinnoh,unova,kalos} [{logo,johto,hoenn,sinnoh,unova,kalos} ...]]]
+usage: dragoon [-h] [-n FILENAME]
+               [-r [{logo,spirit,character,location} [{logo,spirit,character,location} ...]]]
                [-l [0.xx]] [-d [0.xx]]
-               [-t [{normal,fire,fighting,water,flying,grass,poison,electric,ground,psychic,rock,ice,bug,dragon,ghost,dark,steel,fairy} [{normal,fire,fighting,water,flying,grass,poison,electric,ground,psychic,rock,ice,bug,dragon,ghost,dark,steel,fairy} ...]]]
+               [-t [{dart,lavitz,shana,rose,haschel,albert,meru,kongol,miranda,lloyd,character,dragoon,logo,spirit,moon} [{dart,lavitz,shana,rose,haschel,albert,meru,kongol,miranda,lloyd,character,dragoon,logo,spirit,moon} ...]]]
                [-ne] [-e] [-ss [X]] [-w] [-v] [-dr] [-c]
                [id]
-
-Set a character, item, or other thing from The Legend of Dragoon to the current terminal background or wallpaper
+               
+Set a character, location or other thing from The Legend of Dragoon to the current terminal background or wallpaper.
 
 positional arguments:
-  id                    Specify the wanted pokemon ID or the exact (case
+  id                    Specify the wanted image ID or the exact (case
                         insensitive) name
 
 optional arguments:
   -h, --help            show this help message and exit
-  -c, --clear           Clears the current pokemon from terminal background
+  -c, --clear           Clears the current image from terminal background
                         and quits.
 
 Filters:
-  Arguments used to filter the list of pokemons with various conditions that
+  Arguments used to filter the list of images with various conditions that
   then will be picked
 
-  -n NAME, --name NAME  Filter by pokemon which name contains NAME
-  -r [{logo,johto,hoenn,sinnoh,unova,kalos} [{logo,johto,hoenn,sinnoh,unova,kalos} ...]], --region [{logo,johto,hoenn,sinnoh,unova,kalos} [{logo,johto,hoenn,sinnoh,unova,kalos} ...]]
-                        Filter the pokemons by region
+  -n NAME, --name NAME  Filter by images which name contains NAME
+  -r [{logo,spirit,character,location} [{logo,spirit,character,location} ...]], --region [{logo,spirit,character,location} [{logo,spirit,character,location} ...]]
+                        Filter the images by category
   -l [0.xx], --light [0.xx]
-                        Filter out the pokemons darker (lightness threshold
+                        Filter out the images darker (lightness threshold
                         lower) then 0.xx (default is 0.7)
   -d [0.xx], --dark [0.xx]
-                        Filter out the pokemons lighter (lightness threshold
+                        Filter out the images lighter (lightness threshold
                         higher) then 0.xx (default is 0.42)
-  -t [{normal,fire,fighting,water,flying,grass,poison,electric,ground,psychic,rock,ice,bug,dragon,ghost,dark,steel,fairy} [{normal,fire,fighting,water,flying,grass,poison,electric,ground,psychic,rock,ice,bug,dragon,ghost,dark,steel,fairy} ...]], --type [{normal,fire,fighting,water,flying,grass,poison,electric,ground,psychic,rock,ice,bug,dragon,ghost,dark,steel,fairy} [{normal,fire,fighting,water,flying,grass,poison,electric,ground,psychic,rock,ice,bug,dragon,ghost,dark,steel,fairy} ...]]
-                        Filter the pokemons by type.
-  -ne, --no-extras      Excludes extra pokemons (from the extras folder)
-  -e, --extras          Excludes all non-extra pokemons
+  -t [{dart,lavitz,shana,rose,haschel,albert,meru,kongol,miranda,lloyd,character,dragoon,logo,spirit,moon} [{dart,lavitz,shana,rose,haschel,albert,meru,kongol,miranda,lloyd,character,dragoon,logo,spirit,moon} ...]], --type [{dart,lavitz,shana,rose,haschel,albert,meru,kongol,miranda,lloyd,character,dragoon,logo,spirit,moondart,lavitz,shana,rose,haschel,albert,meru,kongol,miranda,lloyd,character,dragoon,logo,spirit,moon} [{dart,lavitz,shana,rose,haschel,albert,meru,kongol,miranda,lloyd,character,dragoon,logo,spirit,moon} ...]]
+                        Filter the images by type.
+  -ne, --no-extras      Excludes extra images (from the extras folder)
+  -e, --extras          Excludes all non-extra images
 
 Misc:
   -ss [X], --slideshow [X]
-                        Instead of simply choosing a random pokemon from the
+                        Instead of simply choosing a random image from the
                         filtered list, starts a slideshow (with X minutes of
-                        delay between pokemon) in the background with the
-                        pokemon that matched the filters
+                        delay between image) in the background with the
+                        image that matched the filters
   -w, --wallpaper       Changes the desktop wallpaper instead of the terminal
                         background
   -v, --verbose         Enables verbose output
   -dr, --dry-run        Implies -v and doesn't actually changes either
-                        wallpaper or background after the pokemon has been
+                        wallpaper or background after the image has been
                         chosen
 
-Not setting any filters will get a completely random pokemon
+Not setting any filters will get a completely random image
 ```
 
 Example:
@@ -155,7 +136,7 @@ Example:
 
 ## iTerm2 settings
 
-I highly suggest making the font colors black and the terminal window transparent. Some of the images have both light and dark colours and so it can be difficult to see the text sometimes. Transparency resolves this issue. Since *Pokemon-Terminal* only changes the background, the transparency must be done manually:
+I (LazoCoder) highly suggest making the font colors black and the terminal window transparent. Some of the images have both light and dark colours and so it can be difficult to see the text sometimes. Transparency resolves this issue. Since *Pokemon-Terminal* only changes the background, the transparency must be done manually:
 
 1. Navigate to iTerm2 > Preferences > Profiles > Window
 2. Set the transparency to about half way.
@@ -173,7 +154,7 @@ The result should look like this:
 
 The folder `dragoonterminal/Images/Extra` is for adding custom images. You can manually add backgrounds to this folder and they will be visible to the program. Only JPG format is supported. To see a list of all the custom backgrounds type:
 ```bash
-$ pokemon -e -dr
+$ dragoon -e -dr
 ```
 Alternatively, you can delete images from this folder and it will not break the program. These are some custom backgrounds:
 
@@ -199,8 +180,8 @@ Alternatively, you can delete images from this folder and it will not break the 
 I have not yet implemented a way to save the terminal background to a profile. To save a background you will need to setup a startup command in the profile.
 1. Navigate to iTerm2 > Preferences > General
 2. Locate the field where it says *Send text at start* under *Command*.
-3. In that field type `pokemon -n [pokemon name]`. You can see an example in the image down below.
-   - Alternatively you can also type `pokemon` for a random theme each time you open up a new terminal.
+3. In that field type `dragoon -n [dragoon name]`. You can see an example in the image down below.
+   - Alternatively you can also type `dragoon` for a random theme each time you open up a new terminal.
 4. You can leave out `; clear` if you don't care about the line showing up at the top of the terminal.
 
 ![](https://i.imgur.com/2d4qa9j.png)
@@ -209,17 +190,22 @@ I have not yet implemented a way to save the terminal background to a profile. T
 Terminology already saves it automatically, just untick "temporary" in the settings after setting your desired Pokemon:
 ![](http://i.imgur.com/BTqYXKa.png)
 
-To show a random Pokemon each session:
+To show a random image each session:
 1. Open `~/.bashrc` in your favorite text editor.
 2. Add the following lines to it:
    ```bash
    if [[ "$TERMINOLOGY" -eq "1" ]]; then
-       pokemon
+       dragoon
    fi
    ```
-That will simply pick a completely random Pokemon each session, but the `pokemon` line is simply calling the app, so you can still filter with regions, darkness, and etc. like you normally would, or you can also reset to a preset Pokemon every time you start.
+That will simply pick a completely random image each session, but the `dragoon` line is simply calling the app, so you can still filter with regions, darkness, and etc. like you normally would, or you can also reset to a preset Pokemon every time you start.
 
-# Notes & Credits
+# Notes & Credits (for Dragoon-Terminal)
+- Sony Entertainment/The Legend of Dragoon team for the game, and its assets and concept art.
+- DrewUniverse and the Legend of Dragoon community (find on [reddit]() and [discord]()).
+- Every fan that cherishes this game and contributes to its memory.
+
+# Notes & Credits (for Pokemon-Terminal)
 
 - Nearly all of the Pokemon backgrounds were created by [Teej](https://pldh.net/gallery/the493).
 - Originally the images were about 100mb in total but [ImageOptim](https://imageoptim.com/) was used to compress them down to about 17mb.
