@@ -77,11 +77,11 @@ def load_pokemon(filename='dragoon.txt'):
 #     return [make_an_extra_pokemon(filename) for filename in filenames]
 
 
-def load_all_pokemon():
-    global g_pokemon_dict
-    pokemon_list = load_pokemon()
-    g_pokemon_dict = {pokemon.get_name(): pokemon for pokemon in pokemon_list}
-    return pokemon_list + load_extra()
+# def load_all_pokemon():
+#     global g_pokemon_dict
+#     pokemon_list = load_pokemon()
+#     g_pokemon_dict = {pokemon.get_name(): pokemon for pokemon in pokemon_list}
+#     return pokemon_list + load_extra()
 
 
 if __name__ == '__main__':

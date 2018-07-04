@@ -81,26 +81,26 @@ from tests.test_utils import region_dict, get_region, make_extra_counts, MAX_ID
 #     # assert db.get_pokemon(name.upper()) in pokemon  # !!! FixMe !!!
 
 
-def test_logo():
-    region_test('logo')
+# def test_logo():
+#     region_test('logo')
 
 
-def test_spirit():
-    region_test('spirit')
+# def test_spirit():
+#     region_test('spirit')
 
 
-def test_character():
-    region_test('character')
+# def test_character():
+#     region_test('character')
 
 
-def test_location():
-    region_test('location')
+# def test_location():
+#     region_test('location')
 
 
 
-def test_regions():
-    for region_name in region_dict:
-        region_test(region_name)
+# def test_regions():
+#     for region_name in region_dict:
+#         region_test(region_name)
 
 
 # def _test_region(region_name):
