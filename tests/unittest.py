@@ -22,20 +22,14 @@ def test_database_single_arg(arg):
         print(len(db))
     elif arg == "get_all":
         print_items(db.get_all())
-    elif arg == "get_regions":
-        print_items(db.get_regions())
-    elif arg == "get_kanto":
-        print_items(db.get_kanto())
+    elif arg == "get_logo":
+        print_items(db.get_logo())
     elif arg == "get_johto":
-        print_items(db.get_johto())
+        print_items(db.get_spirit())
     elif arg == "get_hoenn":
-        print_items(db.get_hoenn())
+        print_items(db.get_character())
     elif arg == "get_sinnoh":
-        print_items(db.get_sinnoh())
-    elif arg == "get_unova":
-        print_items(db.get_unova())
-    elif arg == "get_kalos":
-        print_items(db.get_kalos())
+        print_items(db.get_location())
     elif arg == "get_extra":
         print_items(db.get_extra())
     elif arg == "get_random":

@@ -19,12 +19,10 @@ SCRIPT_DIR = os.path.dirname(os.path.realpath(dragoonterminal.__file__))
 
 region_info = namedtuple('region_info', 'start end first last size')
 region_dict = {
-    'kanto': region_info(1, 151, 'Bulbasaur', 'Mew', 151),
-    'johto': region_info(152, 251, 'Chikorita', 'Celebi', 100),
-    'hoenn': region_info(252, 386, 'Treecko', 'Deoxys', 135),
-    'sinnoh': region_info(387, 493, 'Turtwig', 'Arceus', 107),
-    'unova': region_info(494, 649, 'Victini', 'Genesect', 156),
-    'kalos': region_info(650, 719, 'Chespin', 'Diancie', 70)
+    'logo': region_info(1, 2, 'LogoBlack', 'LogoWhite', 2),
+    'spirit': region_info(3, 10, 'RedEyeDSpirit', 'DivineDSpirit', 8),
+    'character': region_info(11, 23, 'Dart', 'Lloyd', 13),
+    'location': region_info(24, 25, 'Moon', 'Moon2', 2)
 }
 
 
@@ -41,12 +39,10 @@ def expected_len(region_name):
 def get_region(db, region_name):
     """Database unfortunately makes db.__get_region() private :-("""
     func = {
-        'kanto': db.get_kanto,
-        'johto': db.get_johto,
-        'hoenn': db.get_hoenn,
-        'sinnoh': db.get_sinnoh,
-        'unova': db.get_unova,
-        'kalos': db.get_kalos,
+        'logo': db.get_logo,
+        'spirit': db.get_spirit,
+        'character': db.get_character,
+        'location': db.get_location,
         'extra': db.get_extra,
         'all': db.get_all
     }[region_name]

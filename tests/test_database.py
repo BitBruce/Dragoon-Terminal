@@ -45,28 +45,20 @@ def region_length_test(region_name):
     assert len(pokemon) == expected_len
 
 
-def test_kanto_length():
-    region_length_test('kanto')
+def test_logo_length():
+    region_length_test('logo')
 
 
-def test_johto_length():
-    region_length_test('johto')
+def test_spirit_length():
+    region_length_test('spirit')
 
 
-def test_hoenn_length():
-    region_length_test('hoenn')
+def test_character_length():
+    region_length_test('character')
 
 
-def test_sinnoh_length():
-    region_length_test('sinnoh')
-
-
-def test_unova_length():
-    region_length_test('unova')
-
-
-def test_kalos_length():
-    region_length_test('kalos')
+def test_location_length():
+    region_length_test('location')
 
 
 def region_test(region_name):
@@ -89,28 +81,21 @@ def region_test(region_name):
     # assert db.get_pokemon(name.upper()) in pokemon  # !!! FixMe !!!
 
 
-def test_kanto():
-    region_test('kanto')
+def test_logo():
+    region_test('logo')
 
 
-def test_johto():
-    region_test('johto')
+def test_spirit():
+    region_test('spirit')
 
 
-def test_hoenn():
-    region_test('hoenn')
+def test_character():
+    region_test('character')
 
 
-def test_sinnoh():
-    region_test('sinnoh')
+def test_location():
+    region_test('location')
 
-
-def test_unova():
-    region_test('unova')
-
-
-def test_kalos():
-    region_test('kalos')
 
 
 def test_regions():
@@ -122,12 +107,10 @@ def _test_region(region_name):
     db = Database()
     # Database unfortunately makes db.__get_region() private :-(
     func = {
-        "kanto": db.get_kanto,
-        "johto": db.get_johto,
-        "hoenn": db.get_hoenn,
-        "sinnoh": db.get_sinnoh,
-        "unova": db.get_unova,
-        "kalos": db.get_kalos
+        "logo": db.get_logo,
+        "spirit": db.get_spirit,
+        "character": db.get_character,
+        "location": db.get_location
     }[region_name]
     pokemon_list = func()
     region_record = region_dict[region_name]

@@ -25,15 +25,15 @@ def broken_test_three_args(capsys):
     assert out.startswith("Invalid number of arguments.")
 
 
-def broken_test_two_letters(capsys):
-    """ FIXME: The search argorhytm is now bultin the name filter """
-    main([__file__, 'bu'])
-    out, err = capsys.readouterr()
-    assert 'Butterfree' in out
-    # prefix search only
-    main([__file__, 'ut'])
-    out, err = capsys.readouterr()
-    assert 'butterfree' not in out.lower()
+# def broken_test_two_letters(capsys):
+#     """ FIXME: The search argorhytm is now bultin the name filter """
+#     main([__file__, 'bu'])
+#     out, err = capsys.readouterr()
+#     assert 'Butterfree' in out
+#     # prefix search only
+#     main([__file__, 'ut'])
+#     out, err = capsys.readouterr()
+#     assert 'butterfree' not in out.lower()
 
 
 def test_extra(capsys):
@@ -49,7 +49,7 @@ def test_region_names(capsys):
         pass  # It's supposed to crash.
     err: str = capsys.readouterr()[1].strip()
     assert err.endswith(
-        "(choose from 'kanto', 'johto', 'hoenn', 'sinnoh', 'unova', 'kalos')")
+        "(choose from 'logo', 'spirit', 'character', 'location')")
 
 
 def test_all(capsys):
@@ -65,7 +65,7 @@ def test_region(capsys):
     noExtras = NonExtrasFilter(None, None)
     # matrix test of first pokemon name and last pokemon name from all regions
     for name, region_info in region_dict.items():
-        filtered = [p for p in Filter.POKEMON_LIST
+        filtered = [p for p in Filter.IMAGE_LIST
                     if regFilter.matches(p, name)
                     and noExtras.matches(p, None)]
         assert len(filtered) == region_info.size

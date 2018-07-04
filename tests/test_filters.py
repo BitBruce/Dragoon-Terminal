@@ -3,8 +3,8 @@ import pytest
 
 
 def test_basic_loading():
-    assert len(Filter.POKEMON_LIST) >= 493
-    assert len(Filter.filtered_list) == len(Filter.POKEMON_LIST)
+    assert len(Filter.IMAGE_LIST) >= 24
+    assert len(Filter.filtered_list) == len(Filter.IMAGE_LIST)
 
 
 def test_filters_infrastructure():
@@ -13,9 +13,9 @@ def test_filters_infrastructure():
         inst.matches(None, None)
     for fltr in Filter.FILTERS:
         fltr = fltr(None, None)
-        filtered = [pkmn for pkmn in Filter.POKEMON_LIST
+        filtered = [pkmn for pkmn in Filter.IMAGE_LIST
                     if fltr.matches(pkmn, fltr.EXAMPLE_VAL)]
-        assert len(filtered) < len(Filter.POKEMON_LIST)
+        assert len(filtered) < len(Filter.IMAGE_LIST)
 
 
 if __name__ == '__main__':

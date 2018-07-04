@@ -10,28 +10,20 @@ def broken_test_extra_length(region_name='extra'):
     assert len(Database().get_extra()) == expected_len(region_name)
 
 
-def broken_test_kanto_length(region_name='kanto'):
-    assert len(Database().get_kanto()) == expected_len(region_name)
+def broken_test_logo_length(region_name='logo'):
+    assert len(Database().get_logo()) == expected_len(region_name)
 
 
-def broken_test_johto_length(region_name='johto'):
-    assert len(Database().get_johto()) == expected_len(region_name)
+def broken_test_spirit_length(region_name='spirit'):
+    assert len(Database().get_spirit()) == expected_len(region_name)
 
 
-def broken_test_hoenn_length(region_name='hoenn'):
-    assert len(Database().get_hoenn()) == expected_len(region_name)
+def broken_test_character_length(region_name='character'):
+    assert len(Database().get_character()) == expected_len(region_name)
 
 
-def broken_test_sinnoh_length(region_name='sinnoh'):
-    assert len(Database().get_sinnoh()) == expected_len(region_name)
-
-
-def broken_test_unova_length(region_name='unova'):
-    assert len(Database().get_unova()) == expected_len(region_name)
-
-
-def broken_test_kalos_length(region_name='kalos'):
-    assert len(Database().get_kalos()) == expected_len(region_name)
+def broken_test_location_length(region_name='location'):
+    assert len(Database().get_location()) == expected_len(region_name)
 
 
 def broken_test_all_length(region_name='all'):

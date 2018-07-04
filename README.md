@@ -96,7 +96,7 @@ You can clone or [download](https://github.com/LazoCoder/Pokemon-Terminal/archiv
 
 ```
 usage: pokemon [-h] [-n NAME]
-               [-r [{kanto,johto,hoenn,sinnoh,unova,kalos} [{kanto,johto,hoenn,sinnoh,unova,kalos} ...]]]
+               [-r [{logo,johto,hoenn,sinnoh,unova,kalos} [{logo,johto,hoenn,sinnoh,unova,kalos} ...]]]
                [-l [0.xx]] [-d [0.xx]]
                [-t [{normal,fire,fighting,water,flying,grass,poison,electric,ground,psychic,rock,ice,bug,dragon,ghost,dark,steel,fairy} [{normal,fire,fighting,water,flying,grass,poison,electric,ground,psychic,rock,ice,bug,dragon,ghost,dark,steel,fairy} ...]]]
                [-ne] [-e] [-ss [X]] [-w] [-v] [-dr] [-c]
@@ -118,7 +118,7 @@ Filters:
   then will be picked
 
   -n NAME, --name NAME  Filter by pokemon which name contains NAME
-  -r [{kanto,johto,hoenn,sinnoh,unova,kalos} [{kanto,johto,hoenn,sinnoh,unova,kalos} ...]], --region [{kanto,johto,hoenn,sinnoh,unova,kalos} [{kanto,johto,hoenn,sinnoh,unova,kalos} ...]]
+  -r [{logo,johto,hoenn,sinnoh,unova,kalos} [{logo,johto,hoenn,sinnoh,unova,kalos} ...]], --region [{logo,johto,hoenn,sinnoh,unova,kalos} [{logo,johto,hoenn,sinnoh,unova,kalos} ...]]
                         Filter the pokemons by region
   -l [0.xx], --light [0.xx]
                         Filter out the pokemons darker (lightness threshold

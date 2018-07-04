@@ -14,12 +14,10 @@ EXTRA_DIR = os.path.join(IMAGES_DIR, 'Extra')
 
 region_info = collections.namedtuple('region_info', 'start end dir_name')
 region_dict = {
-    'kanto': region_info(1, 151, 'Generation I - Kanto'),
-    'johto': region_info(152, 251, 'Generation II - Johto'),
-    'hoenn': region_info(252, 386, 'Generation III - Hoenn'),
-    'sinnoh': region_info(387, 493, 'Generation IV - Sinnoh'),
-    'unova': region_info(494, 649, 'Generation V - Unova'),
-    'kalos': region_info(650, 719, 'Generation VI - Kalos'),
+    'logo': region_info(1, 2, 'I - Logos'),
+    'spirit': region_info(3, 10, 'II - Spirits'),
+    'character': region_info(11, 23, 'III - Characters'),
+    'location': region_info(24, 25, 'IV - Locations'),
     'extra': region_info(0, 0, 'Extra')
 }
 
@@ -50,7 +48,7 @@ def make_a_pokemon(id, line):
 
 
 def load_pokemon(filename='dragoon.txt'):
-    """Load everything but the Pokemon from the 'Extra' folder"""
+    """Load everything but the images from the 'Extra' folder"""
     with open(os.path.join(DATA_DIR, filename)) as in_file:
         return [make_a_pokemon(i, line) for i, line in enumerate(in_file, 1)]
 
