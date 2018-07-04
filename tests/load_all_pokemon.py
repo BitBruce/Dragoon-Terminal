@@ -53,27 +53,28 @@ def load_pokemon(filename='dragoon.txt'):
         return [make_a_pokemon(i, line) for i, line in enumerate(in_file, 1)]
 
 
-def make_an_extra_pokemon(filename, in_ext='.jpg'):
-    name, ext = os.path.splitext(filename)
-    if ext.lower() == in_ext:
-        name = name.lower()
-        path = os.path.join(EXTRA_DIR, filename)
-        father = g_pokemon_dict.get(name.split('-')[0])
-        if father:
-            return Pokemon(None, name,
-                           father.get_region(), path,
-                           father.get_pkmn_type(),
-                           father.get_pkmn_type_secondary(),
-                           father.get_dark_threshold())
-        else:
-            return Pokemon(None, name, None, path, None, None, None)
-    assert False, 'Bad file extention: {} != {}'.format(ext, in_ext)
+# TODO: uncomment this when all files become jpg
+# def make_an_extra_pokemon(filename, in_ext='.jpg'):
+#     name, ext = os.path.splitext(filename)
+#     if ext.lower() == in_ext:
+#         name = name.lower()
+#         path = os.path.join(EXTRA_DIR, filename)
+#         father = g_pokemon_dict.get(name.split('-')[0])
+#         if father:
+#             return Pokemon(None, name,
+#                            father.get_region(), path,
+#                            father.get_pkmn_type(),
+#                            father.get_pkmn_type_secondary(),
+#                            father.get_dark_threshold())
+#         else:
+#             return Pokemon(None, name, None, path, None, None, None)
+#     assert False, 'Bad file extention: {} != {}'.format(ext, in_ext)
 
 
-def load_extra(image_dir=None):
-    """Load all the file names of the images in the Extra folder."""
-    filenames = os.listdir(image_dir or EXTRA_DIR)
-    return [make_an_extra_pokemon(filename) for filename in filenames]
+# def load_extra(image_dir=None):
+#     """Load all the file names of the images in the Extra folder."""
+#     filenames = os.listdir(image_dir or EXTRA_DIR)
+#     return [make_an_extra_pokemon(filename) for filename in filenames]
 
 
 def load_all_pokemon():

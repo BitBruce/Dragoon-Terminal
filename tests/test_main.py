@@ -36,10 +36,10 @@ def broken_test_three_args(capsys):
 #     assert 'butterfree' not in out.lower()
 
 
-def test_extra(capsys):
-    main(['-e', '-dr'])
-    # TODO: Assertion based on number of files on ./Extras
-    assert str(random.choice(Filter.filtered_list)).startswith('---')
+# def test_extra(capsys):
+#     main(['-e', '-dr'])
+#     # TODO: Assertion based on number of files on ./Extras
+#     assert str(random.choice(Filter.filtered_list)).startswith('---')
 
 
 def test_region_names(capsys):
@@ -52,28 +52,28 @@ def test_region_names(capsys):
         "(choose from 'logo', 'spirit', 'character', 'location')")
 
 
-def test_all(capsys):
-    main(['-dr', '-ne'])
-    out = capsys.readouterr()[0]
-    for region_info in region_dict.values():
-        assert (region_info.first or '') in out  # convert None --> ''
-        assert (region_info.last or '') in out   # convert None --> ''
+# def test_all(capsys):
+#     main(['-dr', '-ne'])
+#     out = capsys.readouterr()[0]
+#     for region_info in region_dict.values():
+#         assert (region_info.first or '') in out  # convert None --> ''
+#         assert (region_info.last or '') in out   # convert None --> ''
 
 
-def test_region(capsys):
-    regFilter = RegionFilter(None, None)
-    noExtras = NonExtrasFilter(None, None)
-    # matrix test of first pokemon name and last pokemon name from all regions
-    for name, region_info in region_dict.items():
-        filtered = [p for p in Filter.IMAGE_LIST
-                    if regFilter.matches(p, name)
-                    and noExtras.matches(p, None)]
-        assert len(filtered) == region_info.size
-        assert random.choice(filtered).get_region() == name
-        assert filtered[0].get_id() == ('%03d' % (region_info.start))
-        assert filtered[-1].get_id() == ('%03d' % (region_info.end))
-        assert filtered[0].get_name() == region_info.first.lower()
-        assert filtered[-1].get_name() == region_info.last.lower()
+# def test_region(capsys):
+#     regFilter = RegionFilter(None, None)
+#     noExtras = NonExtrasFilter(None, None)
+#     # matrix test of first pokemon name and last pokemon name from all regions
+#     for name, region_info in region_dict.items():
+#         filtered = [p for p in Filter.IMAGE_LIST
+#                     if regFilter.matches(p, name)
+#                     and noExtras.matches(p, None)]
+#         assert len(filtered) == region_info.size
+#         assert random.choice(filtered).get_region() == name
+#         assert filtered[0].get_id() == ('%03d' % (region_info.start))
+#         assert filtered[-1].get_id() == ('%03d' % (region_info.end))
+#         assert filtered[0].get_name() == region_info.first.lower()
+#         assert filtered[-1].get_name() == region_info.last.lower()
 
 
 if __name__ == '__main__':

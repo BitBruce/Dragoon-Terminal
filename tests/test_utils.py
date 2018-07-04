@@ -58,13 +58,13 @@ def _pokemon_id_to_region(pokemon_id):
     assert False, '{} is an invalid region'.format(pokemon_id)
 
 
-def make_extra_counts(filename='dragoon.txt'):
-    """Test that correct regions are used in load_all_pokemon.load_extras().
-       Currently generates the dict: {'sinnoh': 14, 'hoenn': 9, 'johto': 1}"""
-    with open(os.path.join(SCRIPT_DIR, 'Data', filename)) as in_file:
-        pokemon_names = tuple([line.split()[0] for line in in_file])
-    filenames = os.listdir(os.path.join(SCRIPT_DIR, 'Images', 'Extra'))
-    father_names = (filename.split('-')[0] for filename in filenames)
-    father_ids = (pokemon_names.index(name) for name in father_names)
-    father_regions = (_pokemon_id_to_region(id) for id in father_ids)
-    return dict(Counter(father_regions))
+# def make_extra_counts(filename='dragoon.txt'):
+#     """Test that correct regions are used in load_all_pokemon.load_extras().
+#        Currently generates the dict: {'sinnoh': 14, 'hoenn': 9, 'johto': 1}"""
+#     with open(os.path.join(SCRIPT_DIR, 'Data', filename)) as in_file:
+#         pokemon_names = tuple([line.split()[0] for line in in_file])
+#     filenames = os.listdir(os.path.join(SCRIPT_DIR, 'Images', 'Extra'))
+#     father_names = (filename.split('-')[0] for filename in filenames)
+#     father_ids = (pokemon_names.index(name) for name in father_names)
+#     father_regions = (_pokemon_id_to_region(id) for id in father_ids)
+#     return dict(Counter(father_regions))
