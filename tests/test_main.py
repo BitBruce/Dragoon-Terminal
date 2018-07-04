@@ -2,9 +2,9 @@
 
 # To run the tests, use: python3 -m pytest --capture=sys
 
-from pokemonterminal.database import Database
-from pokemonterminal.filters import Filter, RegionFilter, NonExtrasFilter
-from pokemonterminal.main import main
+from dragoonterminal.database import Database
+from dragoonterminal.filters import Filter, RegionFilter, NonExtrasFilter
+from dragoonterminal.main import main
 from tests.test_utils import region_dict
 import random
 

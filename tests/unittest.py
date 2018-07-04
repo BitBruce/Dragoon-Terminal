@@ -2,7 +2,7 @@
 
 import sys
 
-from pokemonterminal.database import Database
+from dragoonterminal.database import Database
 
 
 def print_items(items):

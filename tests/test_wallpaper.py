@@ -1,4 +1,4 @@
-from pokemonterminal.wallpaper import _get_adapter_classes
+from dragoonterminal.wallpaper import _get_adapter_classes
 import os.path as __p
 import inspect as __inspct
 

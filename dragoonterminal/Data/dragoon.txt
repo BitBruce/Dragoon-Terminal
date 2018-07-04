@@ -1,0 +1,24 @@
+logo-black   0.61604    logo
+logo-white     0.462721   logo
+spirit-red    0.5451     spirit
+spirit-jade  0.724984   spirit
+spirit-white  0.491232   spirit
+spirit-dark   0.601881   spirit
+spirit-violet    0.708672   spirit
+spirit-blue   0.748101   spirit
+spirit-golden   0.64938    spirit
+spirit-divine    0.718227   spirit
+dragoon-dart     0.621901   dart       dragoon
+dragoon-lavitz  0.630765   lavitz       dragoon
+dragoon-shana      0.638418   shana       dragoon
+dragoon-rose      0.773358   rose       dragoon
+dragoon-albert    0.802686   albert       dragoon
+dragoon-meru      0.460133   meru       dragoon
+dragoon-kongol   0.906494   kongol       dragoon
+dragoon-miranda     0.887968   miranda       dragoon
+character-dart     0.478938   dart       character
+character-rose    0.640308   rose       character
+character-albert     0.459023   albert       character
+character-lloyd      0.488446   lloyd       character
+character-hoodedman       0.463613   lloyd       character
+moon-telescope       0.589331   moon

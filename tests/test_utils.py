@@ -11,11 +11,11 @@
 import os
 from collections import Counter, namedtuple
 
-import pokemonterminal
+import dragoonterminal
 
 
 MAX_ID = 719  # Also total pokemon
-SCRIPT_DIR = os.path.dirname(os.path.realpath(pokemonterminal.__file__))
+SCRIPT_DIR = os.path.dirname(os.path.realpath(dragoonterminal.__file__))
 
 region_info = namedtuple('region_info', 'start end first last size')
 region_dict = {
@@ -62,7 +62,7 @@ def _pokemon_id_to_region(pokemon_id):
     assert False, '{} is an invalid region'.format(pokemon_id)
 
 
-def make_extra_counts(filename='pokemon.txt'):
+def make_extra_counts(filename='dragoon.txt'):
     """Test that correct regions are used in load_all_pokemon.load_extras().
        Currently generates the dict: {'sinnoh': 14, 'hoenn': 9, 'johto': 1}"""
     with open(os.path.join(SCRIPT_DIR, 'Data', filename)) as in_file:

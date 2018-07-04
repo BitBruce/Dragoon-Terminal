@@ -1,26 +1,26 @@
 {
-  "name": "pokemon-terminal",
-  "version": "1.1.0",
-  "description": "Pokemon terminal themes",
+  "name": "dragoon-terminal",
+  "version": "1.0.0",
+  "description": "The Legend of Dragoon terminal themes",
   "bin": {
-    "pokemon": "pokemon",
-    "ichooseyou": "pokemon"
+    "dragoon": "dragoon"
   },
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LazoCoder/Pokemon-Terminal.git"
+    "url": "git+https://github.com/BitBruce/Pokemon-Terminal.git"
   },
   "keywords": [
-    "pokemon",
+    "dragoon",
+    "legend",
     "terminal",
     "theme",
     "themes"
   ],
-  "author": "Lazo (https://github.com/LazoCoder)",
+  "author": "BitBruce (https://github.com/BitBruce)",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/LazoCoder/Pokemon-Terminal/issues"
+    "url": "https://github.com/BitBruce/Pokemon-Terminal/issues"
   },
-  "homepage": "https://github.com/LazoCoder/Pokemon-Terminal#readme"
+  "homepage": "https://github.com/BitBruce/Pokemon-Terminal#readme"
 }

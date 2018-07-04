@@ -25,21 +25,21 @@ def package_data(relpath, folders):
 
 
 setup(
-    name="pokemon-terminal",
-    version="1.1.0",  # Copied from package.json
+    name="dragoon-terminal",
+    version="1.0.0",  # Copied from package.json
 
-    description="Pokemon terminal themes.",
+    description="Dragoon terminal themes.",
     long_description="""
-Pokemon Terminal Themes.
+Dragoon Terminal Themes.
 
-493 unique Pokemon.
-from Kanto, Johto, Hoenn and Sinnoh.
+Terminal backgrounds from The Legend of Dragoon.
 
 Change the Terminal Background & Desktop Wallpaper.
-Supports ITerm2, Terminology & Tilix.""",
-    url="https://github.com/LazoCoder/Pokemon-Terminal",
+Supports ITerm2, Terminology & Tilix.
+Forked from Pokemon-Terminal by LazoCoder.""",
+    url="https://github.com/BitBruce/Pokemon-Terminal",
 
-    author="LazoCoder",
+    author="BitBruce",
     author_email="",
 
     license="GPLv3",
@@ -47,15 +47,15 @@ Supports ITerm2, Terminology & Tilix.""",
     packages=find_packages(exclude=['tests']),
 
     package_data={
-        "pokemonterminal": package_data("pokemonterminal", ["Data", "Images"]),
+        "dragoonterminal": package_data("dragoonterminal", ["Data", "Images"]),
     },
 
-    scripts=['pokemon', 'ichooseyou'],
+    scripts=['dragoon'],
 
-    keywords="pokemon terminal theme style pokemon-terminal",
+    keywords="dragoon terminal theme style dragoon-terminal",
 
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 1 - Alpha",
 
         "Intended Audience :: End Users/Desktop",
         "Environment :: Console",

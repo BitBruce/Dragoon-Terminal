@@ -3,11 +3,11 @@
 import collections
 import os
 
-from pokemonterminal.database import Pokemon
+from dragoonterminal.database import Pokemon
 
 
 SCRIPT_DIR = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-SCRIPT_DIR = os.path.join(SCRIPT_DIR, "pokemonterminal")
+SCRIPT_DIR = os.path.join(SCRIPT_DIR, "dragoonterminal")
 DATA_DIR = os.path.join(SCRIPT_DIR, 'Data')
 IMAGES_DIR = os.path.join(SCRIPT_DIR, 'Images')
 EXTRA_DIR = os.path.join(IMAGES_DIR, 'Extra')
@@ -49,7 +49,7 @@ def make_a_pokemon(id, line):
     return Pokemon(id, name, region, path, main_type, subtype, threshold)
 
 
-def load_pokemon(filename='pokemon.txt'):
+def load_pokemon(filename='dragoon.txt'):
     """Load everything but the Pokemon from the 'Extra' folder"""
     with open(os.path.join(DATA_DIR, filename)) as in_file:
         return [make_a_pokemon(i, line) for i, line in enumerate(in_file, 1)]

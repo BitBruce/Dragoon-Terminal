@@ -2,7 +2,7 @@
 
 # To run the tests, use: python3 -m pytest --capture=sys
 
-from pokemonterminal.database import Database
+from dragoonterminal.database import Database
 from tests.test_utils import expected_len
 
 

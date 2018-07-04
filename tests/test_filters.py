@@ -1,4 +1,4 @@
-from pokemonterminal.filters import Filter
+from dragoonterminal.filters import Filter
 import pytest
 
 

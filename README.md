@@ -1,6 +1,19 @@
-﻿# Pokemon-Terminal
+﻿# Dragoon-Terminal
 
-[![Build Status](https://travis-ci.org/LazoCoder/Pokemon-Terminal.svg?branch=master)](https://travis-ci.org/LazoCoder/Pokemon-Terminal)
+Forked from [Pokemon-Terminal](https://github.com/LazoCoder/Pokemon-Terminal).
+
+This app is for changing the background of a compatible terminal to something The Legend of Dragoon themed. 
+Type `dragoon lavitz` to set an image of Lavitz as the background, or see below for the full list of commands.
+
+At the moment, all of the images are just concept art and assets ripped from the game. In the future the images will be 
+clean personalized images inspired by the original Pokemon-Terminal, and all else thrown into Extras.
+
+All credit due to The Legend of Dragoon, Sony Entertainment
+
+Pokemon-Terminal notes below:
+---
+
+<!-- [![Build Status](https://travis-ci.org/LazoCoder/Pokemon-Terminal.svg?branch=master)](https://travis-ci.org/LazoCoder/Pokemon-Terminal) -->
 
 <p align="center">
     <img src="https://i.imgur.com/n34fXyp.png" width="700"/> <!--Pikachu-->
@@ -89,7 +102,7 @@ usage: pokemon [-h] [-n NAME]
                [-ne] [-e] [-ss [X]] [-w] [-v] [-dr] [-c]
                [id]
 
-Set a pokemon to the current terminal background or wallpaper
+Set a character, item, or other thing from The Legend of Dragoon to the current terminal background or wallpaper
 
 positional arguments:
   id                    Specify the wanted pokemon ID or the exact (case
@@ -158,7 +171,7 @@ The result should look like this:
 
 ## Adding Custom Images
 
-The folder `pokemonterminal/Images/Extra` is for adding custom images. You can manually add backgrounds to this folder and they will be visible to the program. Only JPG format is supported. To see a list of all the custom backgrounds type:
+The folder `dragoonterminal/Images/Extra` is for adding custom images. You can manually add backgrounds to this folder and they will be visible to the program. Only JPG format is supported. To see a list of all the custom backgrounds type:
 ```bash
 $ pokemon -e -dr
 ```
@@ -178,7 +191,7 @@ Alternatively, you can delete images from this folder and it will not break the 
    $ sudo apt-get update
    $ sudo apt install terminology
    ```
-* If you get the error `39:46: syntax error: Expected end of line but found identifier. (-2741)`: Locate the file `ITerm.py` in `pokemonterminal/terminal/adapters` and on line 9, change `iTerm` to `iTerm2`. If you still experience the error, try changing it to `iTerm 2`.
+* If you get the error `39:46: syntax error: Expected end of line but found identifier. (-2741)`: Locate the file `ITerm.py` in `dragoonterminal/terminal/adapters` and on line 9, change `iTerm` to `iTerm2`. If you still experience the error, try changing it to `iTerm 2`.
 
 ## Saving
 

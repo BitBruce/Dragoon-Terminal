@@ -1,4 +1,4 @@
-from pokemonterminal.terminal import _get_adapter_classes
+from dragoonterminal.terminal import _get_adapter_classes
 import os.path as __p
 import inspect as __inspct
 
