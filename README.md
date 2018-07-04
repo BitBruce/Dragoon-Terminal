@@ -17,6 +17,7 @@ and The Legend of Dragoon, Sony Entertainment for the game assets and concept ar
 - Change "region" to "category" in all places.
 - Update brightness values.
 - Finish updating this README
+- Help Pokemon-Terminal project with bug fixes and new features? In favor of replacing flat file, don't know Python though
 
 # README
 
