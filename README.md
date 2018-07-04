@@ -24,7 +24,7 @@ and The Legend of Dragoon, Sony Entertainment for the game assets and concept ar
 
 # README
 
-[![Build Status](https://travis-ci.org/LazoCoder/Pokemon-Terminal.svg?branch=master)](https://travis-ci.org/LazoCoder/Pokemon-Terminal)
+[![Build Status](https://travis-ci.org/BitBruce/Dragoon-Terminal.svg?branch=master)](https://travis-ci.org/BitBruce/Dragoon-Terminal)
 
 <p align="center">
     Example from Pokemon-Terminal:
