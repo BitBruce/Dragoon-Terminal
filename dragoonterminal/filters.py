@@ -20,14 +20,14 @@ class Filter(Action):
 
 
 class NameFilter(Filter):
-    EXAMPLE_VAL = 'bulb'
+    EXAMPLE_VAL = 'spirit-jade'
 
     def matches(self, pokemon: Pokemon, value: str):
         return value in pokemon.get_name()
 
 
 class RegionFilter(Filter):
-    EXAMPLE_VAL = ['kanto']
+    EXAMPLE_VAL = ['spirit']
 
     def matches(self, pokemon: Pokemon, value: list):
         return pokemon.get_region() in value
@@ -48,7 +48,7 @@ class DarkFilter(Filter):
 
 
 class TypeFilter(Filter):
-    EXAMPLE_VAL = ['water']
+    EXAMPLE_VAL = ['dragoon']
 
     def matches(self, pokemon: Pokemon, value: list):
         return pokemon.get_pkmn_type() in value or \

@@ -3,7 +3,8 @@
 Forked from [Pokemon-Terminal](https://github.com/LazoCoder/Pokemon-Terminal).
 
 This app is for changing the background of a compatible terminal to something The Legend of Dragoon themed. 
-Type `dragoon lavitz` to set an image of Lavitz as the background, or see below for the full list of commands.
+Type `dragoon dragoon-lavitz` to set an image of Lavitz as the background (pending cleaner names with new images), 
+or see below for the full list of commands.
 
 At the moment, all of the images are just concept art and assets ripped from the game. In the future the images will be 
 clean personalized images inspired by the original Pokemon-Terminal, and all else thrown into Extras.
@@ -76,7 +77,7 @@ You can clone or [download](https://github.com/BitBruce/Pokemon-Terminal/archive
 # Usage
 
 ```
-usage: dragoon [-h] [-n FILENAME]
+usage: dragoon [-h] [-n NAME]
                [-r [{logo,spirit,character,location} [{logo,spirit,character,location} ...]]]
                [-l [0.xx]] [-d [0.xx]]
                [-t [{dart,lavitz,shana,rose,haschel,albert,meru,kongol,miranda,lloyd,character,dragoon,logo,spirit,moon} [{dart,lavitz,shana,rose,haschel,albert,meru,kongol,miranda,lloyd,character,dragoon,logo,spirit,moon} ...]]]
