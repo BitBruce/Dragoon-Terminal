@@ -84,10 +84,10 @@ def load_pokemon(filename='dragoon.txt'):
 #     return pokemon_list + load_extra()
 
 
-if __name__ == '__main__':
-    pokemon_list = load_all_pokemon()
-    pokemon_dict = {pokemon.get_name(): pokemon for pokemon in pokemon_list}
-    print(len(pokemon_list), len(set(pokemon_list)), len(pokemon_dict))
-    for i in (0, -1):
-        pokemon = pokemon_list[i]
-        print(pokemon.is_extra(), pokemon)
+# if __name__ == '__main__':
+#     pokemon_list = load_all_pokemon()
+#     pokemon_dict = {pokemon.get_name(): pokemon for pokemon in pokemon_list}
+#     print(len(pokemon_list), len(set(pokemon_list)), len(pokemon_dict))
+#     for i in (0, -1):
+#         pokemon = pokemon_list[i]
+#         print(pokemon.is_extra(), pokemon)
