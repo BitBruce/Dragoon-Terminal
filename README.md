@@ -9,7 +9,9 @@ or see below for the full list of commands.
 At the moment, all of the images are just concept art and assets ripped from the game. In the future the images will be 
 clean personalized images inspired by the original Pokemon-Terminal, and all else thrown into Extras.
 
-**Looking for an artist!**
+**Looking for an artist! I envision just wings against a backdrop similar to Pokemon-Terminal.
+Contact me if you want the starter PSD for the included wallpapers.
+I would love to compensate if I could, pending future.**
 
 All credit due to LazoCoder and his contributors for original code and idea, 
 and The Legend of Dragoon, Sony Entertainment for the game assets and concept art.
@@ -18,9 +20,8 @@ and The Legend of Dragoon, Sony Entertainment for the game assets and concept ar
 - Create new, consistent backgrounds/wallpapers. Current ones are rough/outright terrible.
 - Change "region" to "category" in all places.
 - Update brightness values.
-- Travis
-- Finish updating this README
-- Help Pokemon-Terminal project with bug fixes and new features? In favor of replacing flat file, don't know Python though
+- Finish updating this README.
+- Help Pokemon-Terminal project with bug fixes and new features? In favor of replacing flat file, don't know Python...
 
 # README
 
