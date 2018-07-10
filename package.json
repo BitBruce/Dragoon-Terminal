@@ -8,7 +8,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BitBruce/Pokemon-Terminal.git"
+    "url": "git+https://github.com/BitBruce/Dragoon-Terminal.git"
   },
   "keywords": [
     "dragoon",
@@ -20,7 +20,7 @@
   "author": "BitBruce (https://github.com/BitBruce)",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/BitBruce/Pokemon-Terminal/issues"
+    "url": "https://github.com/BitBruce/Dragoon-Terminal/issues"
   },
-  "homepage": "https://github.com/BitBruce/Pokemon-Terminal#readme"
+  "homepage": "https://github.com/BitBruce/Dragoon-Terminal#readme"
 }

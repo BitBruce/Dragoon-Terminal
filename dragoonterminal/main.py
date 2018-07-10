@@ -34,10 +34,10 @@ def daemon(time_stamp, pkmn_list):
 def slideshow(filtered, delay, changer_func):
     pid = os.fork()
     if pid > 0:
-        print(f"Starting slideshow with {len(filtered)}, pokemon " +
-              f"and a delay of {delay} minutes between pokemon")
+        print(f"Starting slideshow with {len(filtered)} images " +
+              f"and a delay of {delay} minutes between images")
         print("Forked process to background with pid", pid,
-              "you can stop it with -c")
+              "you can stop it with dragoon -c")
         os.environ["DRAGOON_TERMINAL_PID"] = str(pid)
         sys.exit(0)
     p = Process(target=daemon, args=(time.time(), filtered,))

@@ -37,7 +37,7 @@ Terminal backgrounds from The Legend of Dragoon.
 Change the Terminal Background & Desktop Wallpaper.
 Supports ITerm2, Terminology & Tilix.
 Forked from Pokemon-Terminal by LazoCoder.""",
-    url="https://github.com/BitBruce/Pokemon-Terminal",
+    url="https://github.com/BitBruce/Dragoon-Terminal",
 
     author="BitBruce",
     author_email="",

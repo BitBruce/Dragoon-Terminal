@@ -20,7 +20,7 @@ def __init_terminal_provider():
         for i, x in enumerate(providers):
             print(f'{i}. {x.__str__()}')
         print("If some of these make no sense or are irrelevant please file " +
-              "an issue in https://github.com/BitBruce/Pokemon-Terminal")
+              "an issue in https://github.com/BitBruce/Dragoon-Terminal")
         print("=> ", end='')
         inp = None
         while inp is None:
@@ -50,7 +50,7 @@ def __init_wallpaper_provider():
         for i, x in enumerate(providers):
             print(f'{i}. {x.__str__()}')
         print("If some of these make no sense or are irrelevant please file " +
-              "an issue in https://github.com/BitBruce/Pokemon-Terminal")
+              "an issue in https://github.com/BitBruce/Dragoon-Terminal")
         print("=> ", end='')
         inp = None
         while inp is None:
