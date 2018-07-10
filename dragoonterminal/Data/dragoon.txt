@@ -21,4 +21,4 @@ character-rose          0.640308   rose         character
 character-albert        0.459023   albert       character
 character-lloyd         0.488446   lloyd        character
 character-hoodedman     0.463613   lloyd        character
-moon-telescope          0.589331   moon
+moon                    0.589331   moon

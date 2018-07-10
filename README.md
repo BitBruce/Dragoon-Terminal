@@ -28,9 +28,12 @@ and The Legend of Dragoon, Sony Entertainment for the game assets and concept ar
 [![Build Status](https://travis-ci.org/BitBruce/Dragoon-Terminal.svg?branch=master)](https://travis-ci.org/BitBruce/Dragoon-Terminal)
 
 <p align="center">
-    Example from Pokemon-Terminal:
-    <img src="https://i.imgur.com/n34fXyp.png" width="700"/> <!--Pikachu-->
-    <!--<br><a href="https://imgur.com/a/0wfFm" target="_blank">More previews</a>-->
+    Example:
+    <img src="https://i.imgur.com/e3O1dpo.png" width="700"/> <!--Lavitz-->
+    <img src="https://i.imgur.com/iDxDYOW.png" width="430"/> <!--Moon-->
+    <img src="https://i.imgur.com/EXrLgWe.png" width="430"/> <!--Rose-->
+    <img src="https://i.imgur.com/YA1CdwJ.png" width="430"/> <!--Albert-->
+    <img src="https://i.imgur.com/1zJkyVI.png" width="430"/> <!--Logo-->
 </p>
 
 # Features
@@ -134,7 +137,7 @@ Misc:
 Not setting any filters will get a completely random image
 ```
 
-Example:
+Example (from Pokemon-Terminal):
 
 ![](https://i.imgur.com/DfA2lcd.gif)
 
@@ -193,7 +196,7 @@ I have not yet implemented a way to save the terminal background to a profile. T
 ![](https://i.imgur.com/2d4qa9j.png)
 
 ### Linux
-Terminology already saves it automatically, just untick "temporary" in the settings after setting your desired Pokemon:
+Terminology already saves it automatically, just untick "temporary" in the settings after setting your desired image:
 ![](http://i.imgur.com/BTqYXKa.png)
 
 To show a random image each session:
@@ -204,7 +207,7 @@ To show a random image each session:
        dragoon
    fi
    ```
-That will simply pick a completely random image each session, but the `dragoon` line is simply calling the app, so you can still filter with regions, darkness, and etc. like you normally would, or you can also reset to a preset Pokemon every time you start.
+That will simply pick a completely random image each session, but the `dragoon` line is simply calling the app, so you can still filter with regions, darkness, and etc. like you normally would, or you can also reset to a preset image every time you start.
 
 # Notes & Credits (for Dragoon-Terminal)
 - Sony Entertainment/The Legend of Dragoon team for the game, and its assets and concept art.
