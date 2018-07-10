@@ -28,7 +28,6 @@ and The Legend of Dragoon, Sony Entertainment for the game assets and concept ar
 [![Build Status](https://travis-ci.org/BitBruce/Dragoon-Terminal.svg?branch=master)](https://travis-ci.org/BitBruce/Dragoon-Terminal)
 
 <p align="center">
-    Example:
     <img src="https://i.imgur.com/e3O1dpo.png" width="700"/> <!--Lavitz-->
     <img src="https://i.imgur.com/iDxDYOW.png" width="430"/> <!--Moon-->
     <img src="https://i.imgur.com/EXrLgWe.png" width="430"/> <!--Rose-->
